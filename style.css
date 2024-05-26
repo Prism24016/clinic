@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+body {
+  font-size: 15px;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+/* 部品
+------------------------------------------ */
+section {
+  margin-bottom: 100px;
+  padding: 3%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+li,
+a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.heading {
+  /* font-size: 24px; */
+  /* margin-bottom: 60px; */
+  text-align: center;
+}
+
+h2 {
+  font-size: 46px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 36px;
+  margin-bottom: 30px;
+  padding: 10px;
+  position: relative;
+}
+
+h4 {
+  font-size: 28px;
+  padding-bottom: 15px;
+}
+
+p {
+  padding-bottom: 8px;
+}
+
+/* header
+------------------------------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.header-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.hamburger-link{
+  display: flex;
+}
+
+.hamburger-link li {
+  padding-left: 30px;
+}
+
+.hamburger-link a{
+  padding:10px;
+}
+
+.hamburger-link a:hover {
+  background-color: #1F7777;
+  color: #fff;
+  border-radius: 10px;
+  /* padding: 10px; */
+}
+
+.hamburger-box{
+  display: none;
+}
+
+.mainvisual-img {
+  height: 650px;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+
+/* main
+------------------------------------------ */
+
+/* 当院紹介
+------------------------------------------ */
+.about-box {
+  display: flex;
+}
+
+.about-img{
+  text-align: center;
+}
+
+.about-box img {
+  max-width: 250px;
+}
+
+.about-item {
+  margin: 35px;
+}
+
+
+/* お知らせ
+------------------------------------------ */
+.news {
+  background-image: url("../img/time");
+  /* background-color: #fff; */
+  border-radius: 50px;
+}
+
+.news-list {
+  border-top: 1px solid #000;
+  margin-bottom: 25px;
+}
+
+.news-list li {
+  border-bottom: 1px solid #000;
+  padding: 15px 25px;
+}
+
+/* バッジ */
+.news-badge {
+  background-color: #31BBBB;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  padding: 6px 5px;
+  text-align: center;
+}
+
+/* 日付 */
+.news-date {
+  display: inline-block;
+  width: 90px;
+}
+
+/* テキスト */
+.news-text {
+  display: block;
+  margin-top: 0.9rem;
+}
+
+/* ボタン */
+.button-green {
+  background-color: #1F7777;
+  font-size: 15px;
+  max-width: 180px;
+  padding: 10px 15px;
+}
+
+.button {
+  border-radius: 50px;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #fff;
+  border: 2px solid #1F7777;
+  color: #1F7777;
+}
+
+
+/* 診療時間
+------------------------------------------ */
+table {
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.background {
+  background-color: #ecebeb;
+}
+
+.table-time {
+  border: 1px solid #c3c3c3;
+}
+
+.table-time td {
+  border: 1px solid #c3c3c3;
+  padding: 10px 20px;
+}
+
+/* アクセス
+------------------------------------------ */
+.access-box {
+  display: flex;
+}
+
+iframe {
+  height: 350px;
+  width: 450px;
+}
+
+.access-text {
+  margin: 30px 30px 0;
+}
+
+.access-text p {
+  font-size: 20px;
+}
+
+.access-text img {
+  padding-bottom: 30px;
+}
+
+.bi-geo-alt-fill,
+.bi-telephone-fill {
+  color: #1F7777;
+}
+
+.access-item {
+  padding-top: 20px;
+}
+
+/* footer
+------------------------------------------ */
+
+footer {
+  background-color: #1F7777;
+  color: #fff;
+  text-align: center;
+}
+
+#page-top {
+  background-color: #1F7777;
+  border-radius: 15%;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+  display: inline-block;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 2;
+}
+
+#page-top::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  border-width: 0px 15px 15px 15px;
+  position: relative;
+  bottom: 30%;
+}
+
+footer nav {
+  padding-top: 20px;
+  align-items: center;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.footer-box li {
+  padding: 0 10px;
+  border-right: 1px solid #fff;
+}
+
+.footer-box a {
+  color: #fff;
+}
+
+.footer-box li:last-child {
+  border-right: none;
+}
+
+/* SP表示
+------------------------------------------ */
+@media (max-width: 950px) {
+  .mainvisual {
+    width: 100%;
+  }
+
+  /* ハンバーガーボタン */
+  .hamburger-btn {
+    height: 30px;
+    margin-right: 15px;
+    position: relative;
+    width: 30px;
+    z-index: 20;
+  }
+
+  .hamburger-btn span {
+    background-color: #1F7777;
+    display: block;
+    height: 1.5px;
+    position: absolute;
+    transition: all 0.5s;
+    width: 100%;
+  }
+
+  .hamburger-btn span:nth-child(1) {
+    top: 25%;
+  }
+
+  .hamburger-btn span:nth-child(2) {
+    top: 50%;
+  }
+
+  .hamburger-btn span:nth-child(3) {
+    top: 75%;
+  }
+
+  .open .hamburger-btn span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-135deg);
+  }
+
+  .open .hamburger-btn span:nth-child(2) {
+    background-color: transparent;
+  }
+
+
+  .open .hamburger-btn span:nth-child(3) {
+    top: 50%;
+    transform: rotate(135deg);
+  }
+
+  .open .hamburger-btn span {
+    background-color: #fff;
+  }
+
+  /* ハンバーガーメニュー  */
+  .hamburger-menu {
+    background-color: #fff;
+    color: #1F7777;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    left: -400px;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 350px;
+    z-index: 20;
+  }
+
+  .hamburger-menu a {
+    color: #1F7777;
+  }
+
+.hamburger-nav li {
+  border-bottom: 1px solid #1F7777;
+}
+
+.hamburger-nav li:first-child {
+  border-top: 1px solid #1F7777;
+}
+
+.hamburger-nav li:hover {
+  background-color: #1F7777;
+  color: #fff;
+  /* padding: 10px; */
+}
+
+.hamburger-nav li a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  }
+
+  .hamburger-sns {
+    padding-top: 60px;
+  }
+
+  .hamburger-sns li {
+    padding-top: 15px;
+  }
+
+  .hamburger-box {
+    background-color: #31BBBB;
+    border-radius: 10px;
+    color: #fff;
+    display: unset;
+    margin-top: 80px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hamburger-text{
+    font-size: 25px;
+  }
+
+  .hamburger-item{
+    padding-top: 10px;
+  }
+
+  .open .hamburger-menu {
+    left: 0;
+    opacity: 1;
+  }
+
+  .open #mask {
+    background-color: #000;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .hamburger-link,
+  .about-box,
+  .voice-item,
+  .access-box {
+    flex-direction: column;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+  footer {
+    margin-left: 0px;
+  }
+
+}
