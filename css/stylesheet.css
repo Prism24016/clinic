@@ -321,9 +321,11 @@ footer nav {
     padding: 5px 5px;
   }
 
-  .mainvisual {
+   .mainvisual-img {
     max-width: 100%;
+    height: auto;
   }
+
 
   /* ハンバーガーボタン */
   .hamburger-btn {
