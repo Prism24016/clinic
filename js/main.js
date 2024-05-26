@@ -33,14 +33,9 @@ $(function () {
 
   // スクロールイベント（スクロールされた際に実行）
   $(window).scroll(function () {
-    // スクロール位置が300pxを超えた場合
-    if ($(this).scrollTop() > 300) {
-      // トップに戻るボタンを表示する
+    if ($(this).scrollTop() > 300 && $(window).width() > 950) {
       pagetop.fadeIn();
-
-      // スクロール位置が300px未満の場合
     } else {
-      // トップに戻るボタンを非表示にする
       pagetop.fadeOut();
     }
   });
