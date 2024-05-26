@@ -20,7 +20,8 @@ $(function () {
 
   // リンクをクリックした時にメニューを閉じる
   $('.hamburger-menu a').on('click', function () {
-    $('#header').removeClass('open');
+    // ここでheaderからopenクラスを削除します
+    $('header').removeClass('open');
   });
 
   /*=================================================
