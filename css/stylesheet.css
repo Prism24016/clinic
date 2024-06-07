@@ -90,10 +90,10 @@ header {
 }
 
 .mainvisual-img {
-  height: 650px;
+  height: auto;
   object-fit: cover;
   object-position: center top;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 50px;
 }
 
@@ -123,9 +123,14 @@ header {
 /* お知らせ
 ------------------------------------------ */
 .news {
-  background-image: url("../img/time");
-  /* background-color: #fff; */
-  border-radius: 50px;
+  background-image: url("../img/time.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+  .news .container{
+  background-color: rgba(255,255,255,0.85);
+  padding: 20px;
 }
 
 .news-list {
@@ -175,11 +180,11 @@ header {
   display: block;
   margin: 0 auto;
   text-align: center;
+  border: 2px solid #1F7777;
 }
 
 .button:hover {
   background-color: #fff;
-  border: 2px solid #1F7777;
   color: #1F7777;
 }
 
@@ -321,11 +326,10 @@ footer nav {
     padding: 5px 5px;
   }
 
-   .mainvisual-img {
+  .mainvisual-img {
     max-width: 100%;
     height: auto;
   }
-
 
   /* ハンバーガーボタン */
   .hamburger-btn {
